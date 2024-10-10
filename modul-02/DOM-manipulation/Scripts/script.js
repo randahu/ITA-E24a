@@ -1,4 +1,4 @@
-author = { name: "Thomas Hvid Spangsberg", email: "thsp@eaaa.dk" };
+const author = { name: "Thomas Hvid Spangsberg", email: "thsp@eaaa.dk" };
 
 let content =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis interdum eleifend. Sed tempor eget sapien et fermentum. Sed a ante lacinia, adipiscing ligula at, euismod ipsum. Mauris ullamcorper congue mauris vitae venenatis. Integer dictum dui eget quam rhoncus, sit amet tempor orci cursus. Praesent nec ultrices nisl. Nam quis justo felis. Etiam dapibus condimentum augue vitae fermentum. Sed tempus mi justo.";
@@ -17,8 +17,6 @@ articleToInsert =
   "<div id='1' class='content'>" +
   "<h1>" +
   article.heading +
-  " - " +
-  i +
   "</h1>" +
   "<p class='inner-content'>" +
   article.content +
@@ -31,4 +29,6 @@ articleToInsert =
   "</p>" +
   "</div>";
 
+mainContentArea.innerHTML = mainContentArea.innerHTML + articleToInsert;
+mainContentArea.innerHTML = mainContentArea.innerHTML + articleToInsert;
 mainContentArea.innerHTML = mainContentArea.innerHTML + articleToInsert;
