@@ -1,13 +1,9 @@
-/*
 let mainContentArea = document.getElementById("main-content-area");
 
-fetchData("/data.json").then((data) => {
+fetchData("Data/data.json").then((data) => {
   console.log(data);
 
   for (let i = 0; i < data.length; i++) {
-    let author = "";
-    let email = "";
-
     let articleToInsert =
       "<div id='" +
       data[i].id +
@@ -19,10 +15,10 @@ fetchData("/data.json").then((data) => {
       data[i].content +
       "</p>" +
       "<p class='author'>" +
-      author +
+      data[i].author +
       "</p>" +
       "<p class='contact'>" +
-      email +
+      data[i].email +
       "</p>" +
       "</div>";
 
@@ -36,4 +32,3 @@ async function fetchData(url) {
   let json = await request.json();
   return json;
 }
-*/
