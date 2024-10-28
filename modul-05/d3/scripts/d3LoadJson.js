@@ -1,4 +1,4 @@
-d3.json("/data/albums.json").then(function (data) {
+d3.json("data/albums.json").then(function (data) {
   console.log(data);
 
   d3.select("#dataJSON").append("h2").text("JSON Data:");
