@@ -5,6 +5,6 @@ d3.select("#data")
   .data(dataset)
   .enter()
   .append("p")
-  .text(function (d) {
-    return d;
+  .text(function (hest) {
+    return hest;
   });
